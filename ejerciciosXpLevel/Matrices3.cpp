@@ -2,38 +2,35 @@
 using namespace std;
 
 int main() {
-    int numeros[10];
-    int suma = 0;
-    int resta;
-    int multiplicacion = 1;
-    double promedio;
+    int matriz[5][5];
+    int numero = 1;
 
-    // Leer los 10 números
-    for (int i = 0; i < 10; i++) {
-        cin >> numeros[i];
-    }
-
-    // Inicializar la resta con el primer elemento
-    resta = numeros[0];
-
-    // Calcular suma, multiplicación y resta
-    for (int i = 0; i < 10; i++) {
-        suma += numeros[i];
-        multiplicacion *= numeros[i];
-
-        if (i > 0) {
-            resta -= numeros[i];
+    // Llenar la matriz
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            matriz[i][j] = numero;
+            numero++;
         }
     }
 
-    // Calcular el promedio
-    promedio = (double)suma / 10;
+    // Imprimir la matriz
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            cout << matriz[i][j] << " ";
+        }
+        cout << endl;
+    }
 
-    // Mostrar resultados
-    cout << "Suma: " << suma << endl;
-    cout << "Resta: " << resta << endl;
-    cout << "Multiplicacion: " << multiplicacion << endl;
-    cout << "Promedio: " << promedio << endl;
+    // Sumar cada columna
+    for (int j = 0; j < 5; j++) {
+        int suma = 0;
+
+        for (int i = 0; i < 5; i++) {
+            suma += matriz[i][j];
+        }
+
+        cout << "Columna " << j + 1 << ": " << suma << endl;
+    }
 
     return 0;
 }
