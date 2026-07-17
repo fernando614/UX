@@ -2,16 +2,34 @@
 using namespace std;
 
 int main() {
-    int numeros[100];
+    int matriz[5][5];
+    int numero = 1;
 
-    // Llenar el arreglo con los números del 1 al 100
-    for (int i = 0; i < 100; i++) {
-        numeros[i] = i + 1;
+    // Llenar la matriz
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            matriz[i][j] = numero;
+            numero++;
+        }
     }
 
-    // Mostrar el arreglo en orden descendente
-    for (int i = 99; i >= 0; i--) {
-        cout << numeros[i] << endl;
+    // Imprimir la matriz
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            cout << matriz[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    // Sumar cada fila
+    for (int i = 0; i < 5; i++) {
+        int suma = 0;
+
+        for (int j = 0; j < 5; j++) {
+            suma += matriz[i][j];
+        }
+
+        cout << "Fila " << i + 1 << ": " << suma << endl;
     }
 
     return 0;
