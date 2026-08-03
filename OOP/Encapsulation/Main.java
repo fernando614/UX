@@ -3,6 +3,7 @@ public class Main{
      Product prod = new Product("Hamburguesa",160);
      
      System.out.println("Nombre del producto es: " + prod.getName());
+     System.out.println("El precio del producto es: " + prod.getSalePrice());	
    }
 }
 
