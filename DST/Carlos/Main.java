@@ -17,6 +17,7 @@ public class Main{
    pila.pop();
    pila.pop();
    pila.pop();
+   pila.pop();
    
    pila.show();
    
@@ -53,7 +54,7 @@ class Stack{
    public int pop() {
       int dato = 0;
       if(isEmpty()) {
-         System.out.println("PILA VACIA!");
+         System.out.println("YA NO SE PUEDEN SACAR VALORES");
       } else {
       
        dato = numbers[tope-1];
