@@ -1,4 +1,4 @@
---HISTORIAS DE USUARIO DE CARLOS--
+--HISTORIAS DE USUARIO DE RODRIGO--
 
 --TEMA POO(PROGRAMACIÓN ORIENTADA A OBJETOS)--
 1. Crear un comportamiento/función que permita al carro acelar (HACER DIAGRAMA DE FLUJO O DIBUJO CON SU PSEUDOCÓDIGO ANTES DE PROGRAMAR Y ADJUNTAR LA FOTO COMO EVIDENCIA)
@@ -15,3 +15,8 @@
     -imprimir en consola unicamente el nombre de los autos que si sean seguros
     -la función deberá llamerse desde el método main usando una instancia/objeto de tipo carro
     -si el método no cumple con alguno de los requisitos anteriores no será validada
+
+
+
+
+    
