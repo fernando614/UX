@@ -1,11 +1,15 @@
 public class Main{
    public static void main(String args[]){
    
+      //CREO MIS OBJETOS
       Car bocho = new Car("bochido","volskwagen","HG-10","rojo",30000,false);
       Car audi = new Car("audi","volskwagen","HG-10","rojo",30000,false);
       Car tesla = new Car("tesla","volskwagen","HG-10","rojo",30000,true);
 
+
+      //INICIALIZO MI ARREGLO
       Car [] cars = new Car[3];
+      //ASIGNO VALORES
       cars[0] = bocho;
       cars[1] = audi;
       cars[2] = tesla;
@@ -42,11 +46,19 @@ class Car{
 
    public void filteredSafeCars(Car [] cars){
 
-      for(Car car: cars){
+      //FOR MEJORADO SIRVE PARA COLLECCIONES
+      /*for(Car car: cars){
          if(car.isSafe){
             System.out.println("Carro " + car.name + " listo para venderse");
          }
-      }
+      }*/
+
+         //FOR TRADICIONAL SIRVE PARA TODO
+         for(int i = 0; i < cars.length; i++){
+            if(cars[i].isSafe){
+               System.out.println("Carro " + cars[i].name + " listo para venderse");
+            }
+         }
    }
 
 }
