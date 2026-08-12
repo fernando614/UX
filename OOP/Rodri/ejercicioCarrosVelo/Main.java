@@ -12,7 +12,12 @@ public class Main{
       
      System.out.println();
 
-     ferrari.datosCar(ferrari.name,ferrari.marca,ferrari.ano,ferrari.modelo);
+     /*MÉTODO ESTA BIEN PERO SE PUEDE REFACTORIZAR 
+     
+     ferrrari.datosCar(); -> SOLO NECESITO LLAMAR AL MÉTODO YA QUE LOS VALORES SE LOS PASE AL CONSTRUCTOR POR LO TANTO NO TENGO QUE PASAR NADA COMO PARÁMETRO
+     */
+
+     ferrari.datosCar(ferrari.name,ferrari.marca,ferrari.ano,ferrari.modelo);//LOS VALORES YA FUERON PASADOS POR EL CONSTRUCTOR ES COMO SI VUELVES A PASAR ASI MISMO DE NUEVO
      ferrari.NoAcelerando(ferrari.name);	
       
       }
@@ -66,5 +71,14 @@ public void datosCar(String name,String marca,String ano,String modelo){
 
    }   
 
+   /*MÉTODO datosCar() CORREGIDO 
+   public void datosCar(){
+    System.out.println("---Auto---");
+    System.out.println("Nombre: " + name);
+    System.out.println("marca: " + marca);
+    System.out.println("año: " + ano);
+    System.out.println("modelo: " + modelo);
+
+   }  */
 
 }   
