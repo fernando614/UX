@@ -1,36 +1,70 @@
 public class Main{
-    public static void main(String args[]){
-    Car automovil_1 = new Car("rayomquen","tesla",200,"exp20",true);
-    Car automovil_2 = new Car("elmencho","ferrari",500,"mateexp",true);
-    Car automovil_3 = new Car("bocho","volskwagen",100,"patito",false);
+   public static void main(String args[]){
+   Car nascar = new Car("RayoMaqueen","nascar","2019","rayoZX");
+   Car ferrari = new Car("Franchesco","ferrari","2020","frech2000");   
     
-        System.out.println("Bienvenidos a la copa piston, veamos como van los automoviles dentro de la carrera");
-        System.out.println("El carro que va a la delanter es el poderoso " + automovil_1.name + "con sus poderosos " + automovil_1.caballosFuerza + " caballos de fuerza");
-        System.out.println("mientras que el carro con el nombre de " + automovil_3.name + " va muy por detras debido a su debil motor");
-        System.out.println("mientras que " + automovil_2 + " va de segundo lugar ");
+    /*"Al escribir el nombre del objeto seguido de un punto y el nombre de la función (ej. nascar.Acelerar),
+     estamos llamando (ejecutando) ese método. Lo que va dentro de los paréntesis son los argumentos: los,
+     datos que le enviamos a la función para que trabaje con ellos."*/
 
+     nascar.datosCar(nascar.name,nascar.marca,nascar.ano,nascar.modelo);
+     nascar.Acelerar(nascar.name);
+      
+     System.out.println();
 
-
-    }
-}
-
+     ferrari.datosCar(ferrari.name,ferrari.marca,ferrari.ano,ferrari.modelo);
+     ferrari.NoAcelerando(ferrari.name);	
+      
+      }
+   
+   }
+   
+   
 class Car{
-    String name;
-    String marca;
-    int caballosFuerza;
-    String motor;
-    boolean nitro;
+   String name;
+   String marca;
+   String ano;
+   String modelo;
+
+/*la única razón por la que Car no lleva tipo de retorno es porque es un constructor
+(tiene el mismo nombre que la clase). Acelerar no es un constructor, así que sí necesita void.*/
 
 
-public Car(String name,String marca,int caballosFuerza,String motor,boolean nitro){
+public Car(String name,String marca,String ano,String modelo){
+   
+   this.name = name;
+   this.marca = marca;
+   this.ano = ano;
+   this.modelo = modelo;   
+}   
+ 
+/*Todo método en Java (que no sea constructor) necesita declarar qué tipo de dato devuelve,
+aunque no devuelva nada. Si no devuelve nada, se usa void.*/	
 
-    this.name = name;
-    this.marca = marca;
-    this.caballosFuerza = caballosFuerza;
-    this.motor = motor;
-    this.nitro = nitro;
+public void Acelerar(String name){
+   
+   System.out.println( name + " esta acelerando!!!");
+      
+   }
 
-    }
+public void NoAcelerando(String name){
+ 
+   System.out.println( name + " no esta acelerando!!!!!");   
+ 
+   }
+
+/*podemos archivar informacion en este public void datosCar, de esta manera se puede ver mas,
+limpio el codigo, sin tantos println arriba,*/
 
 
-}
+public void datosCar(String name,String marca,String ano,String modelo){
+    System.out.println("---Auto---");
+    System.out.println("Nombre: " + name);
+    System.out.println("marca: " + marca);
+    System.out.println("año: " + ano);
+    System.out.println("modelo: " + modelo);
+
+   }   
+
+
+}   
