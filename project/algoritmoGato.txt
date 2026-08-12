@@ -1,0 +1,17 @@
+1. mostrar tablero
+2. definir dos jugadores
+3.mientras el juego no termine ambos jugadores siguen jugando
+4. jugador 1 juega con "x" y jugador 2 juega con las "O"
+5. turno del jugador 1 "ingresa casilla" ( verificar si gano o no, si gano se termina juego)
+6. si la casilla esta ocupada no puede ingresar un valor si no si puede agregarlo
+7.mostrar tablero "actualizado"
+8.turno del jugador 2 "ingresa casilla"
+9. si la casilla esta ocupada no puede ingresar un valor
+10.mostrar tablero "actualizado"
+11.verificar si todas las filas son iguales
+12.verificar si todas las columnas son iguales
+13.verificar si las dos diagonales son iguales
+14.verificar numero de movimientos "si es igual a 9 movimientos es igual a un empate"
+15.si jugador 1 gano mostrar que el gano
+16.si jugador 2 gano mostrar que el gano
+17.si ninguno gano es un empate.

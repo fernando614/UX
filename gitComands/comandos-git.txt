@@ -1,0 +1,25 @@
+git status -> nos dice el estado del repo local
+git add . -> agrega todos los archivos de un folder y los folders incluidos
+git commit -m "agrego archivo de comandos básicos de git"
+git push -> pushea lo que hicimos/cambios al repo remoto
+git push origin <nombre de la rama>
+
+--ACTUALIZAR REPO LOCAL--
+git pull origin main
+
+--VER Y CREAR RAMAS--
+git branch -> me muestra las ramas del repo
+git branch -d <nombre de la rama>-> borrar rama
+git switch -c <nombre de la rama> me crea y cambia de rama en ese momento
+
+--CAMBIARSE DE RAMAS--
+git switch <nombre de la rama>
+
+--SINCRONIZAR Y UNIR LOS CAMBIOS DE MAIN A LA RAMA QUE SE ESTÁ TRABAJANDO--
+git fetch origin main -> sincroniza con el origen
+git merge origin/main -> une los cambios de main a la rama que estoy trabajando
+
+--LOGS--
+git log --oneline
+
+clear -> para limpiar consola
